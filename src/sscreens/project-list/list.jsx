@@ -4,7 +4,7 @@ export  const List = ({uses, list}) => {
     return(
         <table>
             <tr>
-                <th>名称1</th>
+                <th>名称</th>
                 <th>负责人</th>
             </tr>
             <tbody>
