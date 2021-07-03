@@ -15,7 +15,7 @@ export const SearchPanel = ({param, setParam, uses}) => {
                 >
                     <option value={''}>负责人</option>
                     {
-                        uses.map(use =><option value={use.id}>{use.name}</option>)
+                        uses.map(use =><option key={use.id} value={use.id}>{use.name}</option>)
                     }
                 </select>
             </div>

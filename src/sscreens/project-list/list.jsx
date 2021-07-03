@@ -10,7 +10,7 @@ export  const List = ({uses, list}) => {
             <tbody>
             {
                 list.map(project =>
-                    <tr>
+                    <tr key={project.id}>
                         <td>{project.name}</td>
                         <td>{uses.find(user => user.id === project.personId)?.name || ''}</td>
                     </tr>
