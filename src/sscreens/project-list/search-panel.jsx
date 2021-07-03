@@ -1,7 +1,6 @@
 import React, {} from "react";
 
 export const SearchPanel = ({param, setParam, uses}) => {
-    console.log('uses',uses)
     return(
         <form>
             <div>

@@ -15,7 +15,6 @@ export const ProjectListScreen = () =>{
     const [list, setList] = useState([])
 
     useEffect(()=>{
-        console.log('apiUrl',apiUrl)
         fetch(`${apiUrl}/projects?${qs.stringify(cleanObject(param))}`).then(async(response)=>{
             if(response.ok){
                 setList(await response.json())
