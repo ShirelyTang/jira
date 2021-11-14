@@ -5,7 +5,7 @@ const apiUrl = process.env.REACT_APP_API_URL
 export const LoginScreen = () => {
     const login = (param:{username: string, password:string}) => {
             fetch(`${apiUrl}/login`,{
-                method: 'post',
+                method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
